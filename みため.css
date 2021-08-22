@@ -1,0 +1,84 @@
+.title {
+    margin:auto;
+    width: 300px;
+    color: black;
+}
+
+#score {
+    text-align: center;
+}
+
+
+#dino {
+    /* きょうりゅうのたかさ */
+    height: 86px;
+ 
+    /* きょうりゅうのよこはば */
+    width: 85px;
+    
+    /* うえからのたかさ */
+    position: relative;
+    top: 205px;
+    /* left:50px; */
+
+}
+
+#cactus {
+    height: 90px;
+    width: 80px;
+    position: relative;
+    top: 200px;
+    left: 420px;
+    animation: rock 1.33s infinite;
+
+}
+
+@keyframes rock {
+    0% {
+        left: 480px;
+    }
+ 
+    100% {
+        left: -100px;
+    }
+}
+
+
+#game{
+    /* ステージのたかさ */
+    height: 300px;
+ 
+    /* ステージのよこはば */
+    width: 600px;
+ 
+    /* ステージのがぞう */
+    background-image: url("はいけい2.jpeg");
+    background-size: cover;
+    margin: auto;
+ 
+
+}
+
+/* ジャンプのアニメーション */
+.jump-animation {
+    animation: jump 0.5s;
+}
+ 
+ 
+@keyframes jump {
+    0% {
+        top: 225px;
+    }
+ 
+    50% {
+        top: 75px;
+    }
+ 
+    75% {
+        top: 75px;
+    }
+ 
+    100% {
+        top: 225px;
+    }
+}
